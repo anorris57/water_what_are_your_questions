@@ -1,0 +1,19 @@
+[{
+  "id":1,
+  "name": "solid state",
+  "image": "solid.jpg",
+  "question": "Why does ice float?"
+},
+{
+  "id":2,
+  "name": "liquid state",
+  "image": "liquid.jpg",
+  "question": "Why makes up liquid water?"
+},
+{
+  "id":3,
+  "name": "gaseous state (water vapor)",
+  "image": "gas.jpg",
+  "question": "Does water turn into air when it boils?"
+}
+]
