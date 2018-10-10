@@ -1,18 +1,18 @@
 [{
   "id":1,
-  "name": "solid state",
+  "name": "Solid",
   "image": "solid.jpg",
   "question": "Why does ice float?"
 },
 {
   "id":2,
-  "name": "liquid state",
+  "name": "Liquid",
   "image": "liquid.jpg",
   "question": "Why makes up liquid water?"
 },
 {
   "id":3,
-  "name": "gaseous state (water vapor)",
+  "name": "Gaseous",
   "image": "gas.jpg",
   "question": "Does water turn into air when it boils?"
 }

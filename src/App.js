@@ -3,12 +3,12 @@ import './App.css';
 import water from './Water.png';
 import Jumbotron from "./components/Jumbotron";
 import PhysicalStateCard from "./components/PhysicalStateCard";
-
-
+import { BrowserRouter} from 'react-router-dom';
 class App extends Component {
   
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
         <div>
         <Jumbotron>
@@ -24,9 +24,9 @@ class App extends Component {
           </div>
         </Jumbotron>
         </div>
-
         <PhysicalStateCard />
       </div>
+      </BrowserRouter>
       
     );//return
   }//render
