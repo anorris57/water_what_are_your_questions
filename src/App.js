@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import water from './Water.png';
+import water from './water.svg';
 import Jumbotron from "./components/Jumbotron";
 import PhysicalStateCard from "./components/PhysicalStateCard";
-import { BrowserRouter} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Solid from './components/Solid';
+import Liquid from './components/Liquid';
+import Gaseous from './components/Gaseous';
 class App extends Component {
   
   render() {
@@ -24,7 +27,12 @@ class App extends Component {
           </div>
         </Jumbotron>
         </div>
-        <PhysicalStateCard />
+        <Switch>
+        <Route exact path='/' component={ PhysicalStateCard } />
+        <Route path='/Solid' component ={Solid} />
+        <Route path='/Liquid' component ={Liquid} />
+        <Route path='/Gaseous' component ={Gaseous} />
+        </Switch>
       </div>
       </BrowserRouter>
       
