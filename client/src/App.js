@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Navbar from './components/layout/Navbar';
-import water from './water.svg';
-import Jumbotron from "./components/Jumbotron";
 import PhysicalStateCard from "./components/PhysicalStateCard";
 import { BrowserRouter, Route, Switch} from 'react-router-dom';//Switch imported to deal with redirect at PrivateRoute
 import jwt_decode from 'jwt-decode';
@@ -55,20 +53,7 @@ class App extends Component {
       <Provider store={store}>
       <BrowserRouter>
       <div className="App">
-        <div>
-        <Jumbotron>
-          <div>
-          <img src={water} className="App-water1" alt="water" />
-          </div>
-          <div className="Title">
-          <h1>Water Your Questions?</h1>
-          <img src={require("./components/images/drop3.jpg")} alt="waterdrop" />
-          </div>
-          <div>
-          <img src={water} className="App-water2" alt="water" />
-          </div>
-        </Jumbotron>
-        </div>
+        
         
         <Route exact path='/' component={ PhysicalStateCard } />
         <Route exact path='/Solid' component ={Solid} />

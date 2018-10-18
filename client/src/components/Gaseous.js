@@ -1,9 +1,23 @@
 import React from 'react';
 import "./Solid.css";
+import water from '../water.svg';
+import Jumbotron from "../components/Jumbotron";
 import BackgroundImageGas from "./BackgroundImageGas";
 const Gas = ( ) => {
   return(
-    <div>
+  <div>
+    <Jumbotron>
+      <div>
+      <img src={water} className="App-water1" alt="water" />
+      </div>
+      <div className="Title">
+      <h1>Water Your Questions?</h1>
+      <img src={require("../components/images/drop3.jpg")} alt="waterdrop" />
+      </div>
+      <div>
+      <img src={water} className="App-water2" alt="water" />
+      </div>
+    </Jumbotron>
       <BackgroundImageGas />
     <div className="container">
       <div className="text-block1">

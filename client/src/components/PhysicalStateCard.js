@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import "./PhysicalState.css";
+import water from '../water.svg';
+import Jumbotron from "../components/Jumbotron";
 import physicalstates from "../physicalstates.json";
 import Wrapper from "./Wrapper";
 import {Link } from 'react-router-dom';
@@ -27,12 +29,28 @@ class PhysicalStateCard extends Component {
       )
     });
     return (
+    <div>
+      <Jumbotron>
+        <div>
+        <img src={water} className="App-water1" alt="water" />
+        </div>
+        <div className="Title">
+        <h1>Water Your Questions?</h1>
+        <img src={require("../components/images/drop3.jpg")} alt="waterdrop" />
+        </div>
+        <div>
+        <img src={water} className="App-water2" alt="water" />
+        </div>
+      </Jumbotron>
+      
       <div className=" container image-list">
         <div className="card-columns">
           {physicalstateList}
         </div>
       </div>
-    )
+      </div> 
+      
+    );//return
   
   }//render
 }//component
