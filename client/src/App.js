@@ -3,7 +3,7 @@ import Navbar from './components/layout/Navbar';
 import water from './water.svg';
 import Jumbotron from "./components/Jumbotron";
 import PhysicalStateCard from "./components/PhysicalStateCard";
-import { BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';//Switch imported to deal with redirect at PrivateRoute
 import jwt_decode from 'jwt-decode';
 import setAuthToken from './utils/setAuthToken';
 import { setCurrentUser, logoutUser } from './actions/authActions';
@@ -11,6 +11,8 @@ import { clearCurrentProfile } from './actions/profileActions';
 
 import { Provider } from 'react-redux';
 import store from './store';
+
+import PrivateRoute from './components/common/PrivateRoute';
 
 import Solid from './components/Solid';
 import Liquid from './components/Liquid';
@@ -75,7 +77,9 @@ class App extends Component {
         <div className="container">
           <Route exact path='/register' component={ Register} />
           <Route exact path='/login' component={ Login} />
-          <Route exact path='/dashboard' component={ Dashboard} />
+          <Switch>
+          <PrivateRoute exact path='/dashboard' component={ Dashboard} />
+          </Switch>
         </div>
        
         <Navbar />
