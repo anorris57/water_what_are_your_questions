@@ -95,12 +95,12 @@ class CreateProfile extends Component {
                   info="What is your favorite Chemistry topic?"
                 />
                 <TextAreaFieldGroup
-                  placeholder="Short Bio"
+                  placeholder="Questions"
                   name="bio"
                   value={this.state.bio}
                   onChange={this.onChange}
                   error={errors.bio}
-                  info=" Share what career field you plan to pursue."
+                  info=" Share your questions on chemistry or recommendations for further chemistry topics to be explored"
                 />
                 <input
                   type="submit"
