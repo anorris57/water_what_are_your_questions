@@ -22,6 +22,7 @@ import Dashboard from './components/dashboard/Dashboard';
 import CreateProfile from './components/create-profile/CreateProfile';
 import EditProfile from './components/edit-profile/EditProfile';
 import Profiles from './components/profiles/Profiles';
+import Posts from './components/posts/Posts';
 
 import './App.css';
 
@@ -73,12 +74,15 @@ class App extends Component {
             component={CreateProfile}/>
           </Switch>
           <Switch>
-                <PrivateRoute
+            <PrivateRoute
                   exact
                   path="/edit-profile"
                   component={EditProfile}
                 />
-              </Switch>
+          </Switch>
+          <Switch>
+            <PrivateRoute exact path="/feed" component={Posts} />
+          </Switch>
         </div>
         <Navbar />
       </div>
