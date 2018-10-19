@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import isEmpty from '../../validation/is-empty';
 
 class ProfileItem extends Component {
@@ -26,9 +25,6 @@ class ProfileItem extends Component {
                 <span>{profile.bio}</span>
               )}
             </p>
-            <Link to={`/profile/${profile.handle}`} className="btn btn-info">
-              View Profile
-            </Link>
           </div>
         </div>
       </div>
