@@ -1,6 +1,4 @@
-img1 {
-  width: 100%;
-}
+
 
 .landing {
   position: relative;
@@ -25,16 +23,4 @@ img1 {
   height: 100%;
 }
 
-.card-form {
-  opacity: 0.9;
-}
-
-.latest-profiles-img {
-  width: 40px;
-  height: 40px;
-}
-
-.form-control::placeholder {
-  color: #bbb !important;
-}
 

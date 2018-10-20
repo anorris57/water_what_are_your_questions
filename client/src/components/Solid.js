@@ -2,11 +2,11 @@ import React from 'react'
 import "./Solid.css";
 import water from '../water.svg';
 import Jumbotron from "../components/Jumbotron";
-import BackgroundImage from "./BackgroundImage";
+import "./solidImg.css";
 
 const Solid = ( ) => {
   return(
-  <div>
+  <div className="solid">
     <Jumbotron>
       <div>
       <img src={water} className="App-water1" alt="water" />
@@ -19,7 +19,6 @@ const Solid = ( ) => {
       <img src={water} className="App-water2" alt="water" />
       </div>
     </Jumbotron>
-    <BackgroundImage/>
     <div className="container">
       <div className="text-block1">
        <h4>Polarity</h4>
