@@ -21,14 +21,13 @@ const Gas = ( ) => {
       <BackgroundImageGas />
     <div className="container">
       <div className="text-block1">
-       <h4>Make Up</h4>
-       A water molecule is a chemical compound consisting of one oxygen atom bonded to  two hydrogen atoms. A chemical compound is when a new substance is formed two different substances. The new substance, in this case: water is totally different in chemical behavior than the original substances. The bond between the atoms is a covalent bond. </div>
+       <h4>Attractive Forces: KMT</h4> <p>KMT is the Kinectic Molelcular Theroy of Matter. It looks at the behavior of matter as a trade off between attractive forces between the atoms/molecules and the  movement ie speed (kinetic energy) of the individual species. Gases are made of molecules that move extremely fast and are far apart so  that their forces of attractions can't kick in. </p></div>
        <div className="text-block2">
-       <h4>Covalent Bonding</h4>
-       <p>There are different types of chemical bonds. A covalent bond is when two atoms are attracted to the electrons of another atom but the attraction is not enough  to pull off the electrons so the two atoms wind up sharing the atoms. In the case of water the  oxygen and hydrogen atoms don't share the electrons evenly and this causes a polar covalent bond.</p></div>
+       <h4>Vapor Pressure</h4>
+       <p>A gas is called a vapor when the substance that makes it usally exists as a liquid. That's why we have water vapor and not oxygen vapor. Vapor pressure is the pressure exerted by a liquid's vapor(gas) when in contact with the liquid (like in a water bottle). Water boils when it's vapor pressure equals the prevailing atmospheric pressure.</p></div>
        <div className="text-block3">
-       <h4>Special Liquid</h4>
-       <p>The polar bonds of water and its molecular shape gives cause water to have unique properties. Liquid water has a high heat capacity (can absorb and retain more heat than other liquids), is able to dissolve many substances (because of the uneven distribution of charge) and its solid state  (ice) is less dense. This allows ice to float in water. </p></div>
+       <h4>Water Vapor and Air</h4>
+       <p>When water molecules receive enough energy (whether through direct application: boiling or ambient conditions: evaporation to overcome the attractive forces between them they escape as water vapor and don't chemically change at all. Air is a mixture of gases of which water vapor is one.  </p></div>
        </div>
     </div>//overall div
   )

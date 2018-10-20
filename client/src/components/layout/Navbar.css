@@ -17,7 +17,9 @@
   text-decoration: none;
   font-size: 17px;
 }
-
+ .navbar-nav .nav-link {
+    color: rgb(23, 36, 206);
+}
 /* Change the color of links on hover */
 .navbar a:hover {
   background-color: #ddd;
